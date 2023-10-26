@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css?v=1.0">
     <title>Tyler Chan Photography</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Final.png">
+    <link rel="icon" type="image/x-icon" href="../assets/Final.png">
 </head>
 <body>
+    
+<div id="imageModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
     <a href="../index.html">Home</a>
     <section class="project">
         <div class="project-words">
             <h3>Theater Rotterdam: Jong Talent</h3>
         </div>
         <div class="image-gallery">
-            <img src="../assets/9. Theater Rotterdam/TR selects/1.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/TR selects/2.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/TR selects/3.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/TR selects/4.jpg" alt="Image 2">
+            <img src="../assets/9. Theater Rotterdam/TR selects/1.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/TR selects/1.jpg')">
+            <img src="../assets/9. Theater Rotterdam/TR selects/2.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/TR selects/2.jpg')">
+            <img src="../assets/9. Theater Rotterdam/TR selects/3.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/TR selects/3.jpg')">
+            <img src="../assets/9. Theater Rotterdam/TR selects/4.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/TR selects/4.jpg')">
 
-            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Martin_A0.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Polina_A0.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Rebecca_A0.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Zikriat_A0.jpg" alt="Image 2">
+            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Martin_A0.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Martin_A0.jpg')">
+            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Polina_A0.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Polina_A0.jpg')">
+            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Rebecca_A0.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Rebecca_A0.jpg')">
+            <img src="../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Zikriat_A0.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/posters/TR_Jong-Talent_Affiches_V04_jvd_Zikriat_A0.jpg')">
 
-            <img src="../assets/9. Theater Rotterdam/installations/IMG_2119.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/installations/IMG_2390.jpg" alt="Image 2">
-            <img src="../assets/9. Theater Rotterdam/installations/IMG_2395.jpg" alt="Image 2">
-            <!-- <img src="../assets/9. Theater Rotterdam/installations/IMG_2844.jpg" alt="Image 2"> -->
-            <img src="../assets/9. Theater Rotterdam/installations/IMG_3003.jpg" alt="Image 2">
+            <img src="../assets/9. Theater Rotterdam/installations/IMG_2119.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/installations/IMG_2119.jpg')">
+            <img src="../assets/9. Theater Rotterdam/installations/IMG_2390.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/installations/IMG_2390.jpg')">
+            <img src="../assets/9. Theater Rotterdam/installations/IMG_2395.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/installations/IMG_2395.jpg')">
+            <!-- <img src="../assets/9. Theater Rotterdam/installations/IMG_2844.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/installations/IMG_2844.jpg')"> -->
+            <img src="../assets/9. Theater Rotterdam/installations/IMG_3003.jpg" alt="Image 2" onclick="openModal('../assets/9. Theater Rotterdam/installations/IMG_3003.jpg')">
         </div>
     </section>
+
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

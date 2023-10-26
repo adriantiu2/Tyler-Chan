@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css?v=1.0">
     <title>Tyler Chan Photography</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Final.png">
+    <link rel="icon" type="image/x-icon" href="../assets/Final.png">
 </head>
 <body>
+
+<div id="imageModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
     <a href="../index.html">Home</a>
     <section class="project">
         <div class="project-words">
             <h3>Golf Wang: NYC Exclusive</h3>
         </div>
         <div class="image-gallery">
-            <img src="../assets/8. Golf Wang (tbd)/000652200029.jpg" alt="Image 2">
-            <img src="../assets/8. Golf Wang (tbd)/000652210028.jpg" alt="Image 2">
-            <img src="../assets/8. Golf Wang (tbd)/000652220035.jpg" alt="Image 2">
+            <img src="../assets/8. Golf Wang (tbd)/000652200029.jpg" alt="Image 2" onclick="openModal('../assets/8. Golf Wang (tbd)/000652200029.jpg')">
+            <img src="../assets/8. Golf Wang (tbd)/000652210028.jpg" alt="Image 2" onclick="openModal('../assets/8. Golf Wang (tbd)/000652210028.jpg')">
+            <img src="../assets/8. Golf Wang (tbd)/000652220035.jpg" alt="Image 2" onclick="openModal('../assets/8. Golf Wang (tbd)/000652220035.jpg')">
         </div>
     </section>
+
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

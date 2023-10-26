@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css?v=1.0">
     <title>Tyler Chan Photography</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Final.png">
+    <link rel="icon" type="image/x-icon" href="../assets/Final.png">
 </head>
 <body>
+
+<div id="imageModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
     <a href="../index.html">Home</a>
     <section class="project">
         <div class="project-words">
@@ -15,12 +20,13 @@
             <p>Sumibu 2022 and 2023 editorials shot by Tyler Chan</p>
         </div>
         <div class="image-gallery">
-            <img src="../assets/11. Sumibu/1.jpg" alt="Image 2">
-            <img src="../assets/11. Sumibu/2.jpg" alt="Image 2">
-            <img src="../assets/11. Sumibu/3.jpg" alt="Image 2">
-            <img src="../assets/11. Sumibu/4.jpg" alt="Image 2">
-            <img src="../assets/11. Sumibu/5.jpg" alt="Image 2">
+            <img src="../assets/11. Sumibu/1.jpg" alt="Image 2" onclick="openModal('../assets/11. Sumibu/1.jpg')">
+            <img src="../assets/11. Sumibu/2.jpg" alt="Image 2" onclick="openModal('../assets/11. Sumibu/2.jpg')">
+            <img src="../assets/11. Sumibu/3.jpg" alt="Image 2" onclick="openModal('../assets/11. Sumibu/3.jpg')">
+            <img src="../assets/11. Sumibu/4.jpg" alt="Image 2" onclick="openModal('../assets/11. Sumibu/4.jpg')">
+            <img src="../assets/11. Sumibu/5.jpg" alt="Image 2" onclick="openModal('../assets/11. Sumibu/5.jpg')">
         </div>
     </section>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

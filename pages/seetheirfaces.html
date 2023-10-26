@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css?v=1.0">
     <title>Tyler Chan Photography</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Final.png">
+    <link rel="icon" type="image/x-icon" href="../assets/Final.png">
 </head>
 <body>
+
+<div id="imageModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
     <a href="../index.html">Home</a>
     <section class="project">
         <div class="project-words">
@@ -16,11 +21,12 @@
         </div>
         <div class="image-gallery">
             <p>Exhibited at Pinni47, Tamprere, Finland</p>
-            <img src="../assets/4. See Their Faces/1.jpg" alt="Image 2">
-            <img src="../assets/4. See Their Faces/2.jpg" alt="Image 2">
-            <img src="../assets/4. See Their Faces/3.jpg" alt="Image 2">
-            <img src="../assets/4. See Their Faces/4.jpg" alt="Image 2">
+            <img src="../assets/4. See Their Faces/1.jpg" alt="Image 2" onclick="openModal('../assets/4. See Their Faces/1.jpg')">
+            <img src="../assets/4. See Their Faces/2.jpg" alt="Image 2" onclick="openModal('../assets/4. See Their Faces/2.jpg')">
+            <img src="../assets/4. See Their Faces/3.jpg" alt="Image 2" onclick="openModal('../assets/4. See Their Faces/3.jpg')">
+            <img src="../assets/4. See Their Faces/4.jpg" alt="Image 2" onclick="openModal('../assets/4. See Their Faces/4.jpg')">
         </div>
     </section>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>

@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css?v=1.0">
     <title>Tyler Chan Photography</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Final.png">
+    <link rel="icon" type="image/x-icon" href="../assets/Final.png">
 </head>
 <body>
+
+<div id="imageModal" class="modal">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
+
     <a href="../index.html">Home</a>
     <section class="project">
         <div class="project-words">
@@ -15,10 +21,12 @@
             <p>Mike Dean shot for XXL, Billboard, Complex, Variety</p>
         </div>
         <div class="image-gallery">
-            <img src="../assets/5. Mike Dean/Mike Dean Main copy.jpeg" alt="Image 2">
-            <img src="../assets/5. Mike Dean/Mike Dean CU Portrait copy.jpeg" alt="Image 2">
-            <img src="../assets/5. Mike Dean/Mike Dean 3 copy.jpeg" alt="Image 1">
+            <img src="../assets/5. Mike Dean/Mike Dean Main copy.jpeg" alt="Image 2" onclick="openModal('../assets/5. Mike Dean/Mike Dean Main copy.jpeg')">
+            <img src="../assets/5. Mike Dean/Mike Dean CU Portrait copy.jpeg" alt="Image 2" onclick="openModal('../assets/5. Mike Dean/Mike Dean CU Portrait copy.jpeg')">
+            <img src="../assets/5. Mike Dean/Mike Dean 3 copy.jpeg" alt="Image 1" onclick="openModal('../assets/5. Mike Dean/Mike Dean 3 copy.jpeg')">
         </div>
     </section>
+
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
