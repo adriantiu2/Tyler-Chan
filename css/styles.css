@@ -29,6 +29,10 @@ nav ul li {
     padding-bottom: 10px;
 }
 
+.project-words img{
+    width: 100%;
+}
+
 a:link, a:visited {
     color: blue;
     text-decoration: none;
